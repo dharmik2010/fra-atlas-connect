@@ -15,15 +15,15 @@ const Header = () => {
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <a
               className="transition-colors hover:text-foreground/80 text-foreground/60"
-              href="#features"
+              href="/dashboard"
             >
-              Features
+              Dashboard
             </a>
             <a
               className="transition-colors hover:text-foreground/80 text-foreground/60"
-              href="#dashboard"
+              href="#features"
             >
-              Dashboard
+              Features
             </a>
             <a
               className="transition-colors hover:text-foreground/80 text-foreground/60"
@@ -45,9 +45,11 @@ const Header = () => {
             </Button>
           </div>
           <nav className="flex items-center">
-            <Button variant="outline" size="sm" className="ml-2">
-              <User className="mr-2 h-4 w-4" />
-              Login
+            <Button variant="outline" size="sm" className="ml-2" asChild>
+              <a href="/auth">
+                <User className="mr-2 h-4 w-4" />
+                Login
+              </a>
             </Button>
           </nav>
         </div>
